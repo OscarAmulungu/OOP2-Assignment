@@ -1,0 +1,129 @@
+package Company;
+
+public class PhoneShop {
+	private Device[] dev;
+	private int amount;
+	public PhoneShop(){
+		dev = new Device[1000];
+		amount = 0;
+	}
+	
+	
+	public void AddNewDevice(Device newDevice){
+		if(amount<1000) {
+			dev[amount]= newDevice;
+			++amount;
+		}
+		
+	}
+	public double CostOfAllDevices(){
+		double count = 0;
+		for(int i = 0; i<amount; i++) {
+			count = count + dev[i].GetPrice();
+		}return count;
+	}
+	public Integer CountHowManySamsungDevices(){
+		int count = 0;
+		for(int i = 0; i<amount; i++) {
+			if(dev[i].GetBrand()==("Samsung")){
+				count++;
+			}
+		}
+		return count;
+	}
+	public Integer CountHowManyAppleDevices(){
+		int count = 0;
+		for(int i = 0; i<amount; i++) {
+			if(dev[i].GetBrand()==("Apple")){
+				count++;
+			}
+		}
+		return count;
+	}
+	public String NameOfMostExpensiveDevice(){
+		double expensive = dev[0].GetPrice();
+		String Name = dev[0].GetName();
+		for(int i = 1; i<amount; i++) {
+			if(dev[i].GetPrice()> expensive) {
+				expensive = dev[i].GetPrice();
+				Name = dev[i].GetName();
+			}
+		}return Name;
+		
+	}
+	public String NameOfCheapestDevice(){
+		double cheapest = dev[0].GetPrice();
+		String Name =dev[0].GetName();
+		for(int i = 1; i<amount; i++) {
+			if(dev[i].GetPrice()< cheapest) {
+				cheapest = dev[i].GetPrice();
+				Name =dev[i].GetName();
+			}
+		}return Name;
+		
+	}
+	public Double TotalPriceofDevices(){
+		double sum = 0;
+		for(int i = 0; i< amount; i++) {
+			sum = sum + dev[i].GetPrice();
+		}return sum;
+	}
+	
+	public Double AveragePrice(){
+		int sum = 0;
+		for(int i =0; i< amount; i++) {
+			sum = (int) (sum + dev[i].GetPrice());
+		}
+		double average = sum/amount;
+		return average;
+	}
+	public Boolean ContainsSpecificWhiteDevices(){
+		for(int i =0; i<amount; i++) {
+			if("White".equalsIgnoreCase(dev[i].GetColor())) {
+				return true;
+			}
+		}return false;
+	}
+	public Boolean ContainsSpecificBlackDevices(){
+		for(int i =0; i<amount; i++) {
+			if("Black".equalsIgnoreCase(dev[i].GetColor())) {
+				return true;
+			}
+		}return false;
+	}
+	
+/*	public Double DevicesAboveCertainPrice(){
+		
+	}
+*/
+	public Integer LargestDevice(){
+		Integer largest = dev[0].GetSize();
+		for(int i = 1; i<amount; i++) {
+			if(dev[i].GetSize()> largest) {
+				largest = dev[i].GetSize();
+			}
+		}return largest;
+		
+	}
+	public Integer SmallestDevice(){
+		Integer smallest = dev[0].GetSize();
+		for(int i = 1; i<amount; i++) {
+			if(dev[i].GetSize()< smallest) {
+				smallest = dev[i].GetSize();
+			}
+		}return smallest;
+		
+	}
+	public int HowMany2018Devices(){
+		int count = 0;
+		for(int i = 0; i<amount; i++) {
+			if(dev[i].GetYear()== 2018){
+				count++;
+			}
+		}
+		return count;
+	}
+
+
+}
+
