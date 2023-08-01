@@ -3,8 +3,8 @@ package Company;
 //Inheritance
 public class Huawei extends Device {
 
-	public Huawei(String nN, Double nP, String nC, String nB, Integer nY, Integer nS) {
-		super(nN, nP, nC, nB, nY, nS);
+	public Huawei(String nN, Double nP, String nC, String nB, Integer nY, Double nDS) {
+		super(nN, nP, nC, nB, nY, nDS);
 		// TODO Auto-generated constructor stub
 	}
 	@Override
@@ -13,6 +13,6 @@ public class Huawei extends Device {
 	}
 	@Override
 	public Double DiscountPrice(){
-		return Price - 100;
+		return SellingPrice() - 200;
 	}
 }
