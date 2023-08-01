@@ -14,14 +14,8 @@ public class PhoneShop {
 			dev[amount]= newDevice;
 			++amount;
 		}
-		
 	}
-	public double CostOfAllDevices(){
-		double count = 0;
-		for(int i = 0; i<amount; i++) {
-			count = count + dev[i].GetPrice();
-		}return count;
-	}
+	
 	public Integer CountHowManySamsungDevices(){
 		int count = 0;
 		for(int i = 0; i<amount; i++) {
@@ -77,14 +71,14 @@ public class PhoneShop {
 		double average = sum/amount;
 		return average;
 	}
-	public Boolean ContainsSpecificWhiteDevices(){
+	public Boolean ContainsSpecificWhiteDevices(String string){
 		for(int i =0; i<amount; i++) {
 			if("White".equalsIgnoreCase(dev[i].GetColor())) {
 				return true;
 			}
 		}return false;
 	}
-	public Boolean ContainsSpecificBlackDevices(){
+	public Boolean ContainsSpecificBlackDevices(String string){
 		for(int i =0; i<amount; i++) {
 			if("Black".equalsIgnoreCase(dev[i].GetColor())) {
 				return true;
@@ -96,25 +90,25 @@ public class PhoneShop {
 		
 	}
 */
-	public Integer LargestDevice(){
-		Integer largest = dev[0].GetSize();
+	public Double LargestDevice(){
+		Double largest = dev[0].GetDisplaySize();
 		for(int i = 1; i<amount; i++) {
-			if(dev[i].GetSize()> largest) {
-				largest = dev[i].GetSize();
+			if(dev[i].GetDisplaySize()> largest) {
+				largest = dev[i].GetDisplaySize();
 			}
 		}return largest;
 		
 	}
-	public Integer SmallestDevice(){
-		Integer smallest = dev[0].GetSize();
+	public Double SmallestDevice(){
+		Double smallest = dev[0].GetDisplaySize();
 		for(int i = 1; i<amount; i++) {
-			if(dev[i].GetSize()< smallest) {
-				smallest = dev[i].GetSize();
+			if(dev[i].GetDisplaySize()< smallest) {
+				smallest = dev[i].GetDisplaySize();
 			}
 		}return smallest;
 		
 	}
-	public int HowMany2018Devices(){
+	public Integer HowMany2018Devices(){
 		int count = 0;
 		for(int i = 0; i<amount; i++) {
 			if(dev[i].GetYear()== 2018){
@@ -126,4 +120,3 @@ public class PhoneShop {
 
 
 }
-
