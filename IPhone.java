@@ -3,16 +3,16 @@ package Company;
 //Inheritance
 public class IPhone extends Device {
 
-	public IPhone(String nN, Double nP, String nC, String nB, Integer nY, Integer nS) {
-		super(nN, nP , nC, nB, nY, nS);
+	public IPhone(String nN, Double nP, String nC, String nB, Integer nY, Double nDS) {
+		super(nN, nP , nC, nB, nY, nDS);
 		// TODO Auto-generated constructor stub
 	}
 	@Override
 	public Double SellingPrice() {
-		return Price + Price*0.7;
+		return Price + Price*0.5;
 	}
 	@Override
 	public Double DiscountPrice(){
-		return Price - 500;
+		return SellingPrice() - 800;
 	}
 }
