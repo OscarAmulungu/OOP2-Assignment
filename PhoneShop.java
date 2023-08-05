@@ -85,11 +85,6 @@ public class PhoneShop {
 			}
 		}return false;
 	}
-	
-/*	public Double DevicesAboveCertainPrice(){
-		
-	}
-*/
 	public Double LargestDevice(){
 		Double largest = dev[0].GetDisplaySize();
 		for(int i = 1; i<amount; i++) {
