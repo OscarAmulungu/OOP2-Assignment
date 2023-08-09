@@ -34,6 +34,15 @@ public class PhoneShop {
 		}
 		return count;
 	}
+	public Integer CountHowManyHuaweiDevices(){
+		int count = 0;
+		for(int i = 0; i<amount; i++) {
+			if(dev[i].GetBrand()==("Huawei")){
+				count++;
+			}
+		}
+		return count;
+	}
 	public String NameOfMostExpensiveDevice(){
 		double expensive = dev[0].GetPrice();
 		String Name = dev[0].GetName();
@@ -85,6 +94,13 @@ public class PhoneShop {
 			}
 		}return false;
 	}
+	public Boolean ContainsSpecificNokiaDevices(String string){
+		for(int i =0; i<amount; i++) {
+			if("Nokia".equalsIgnoreCase(dev[i].GetBrand())) {
+				return true;
+			}
+		}return false;
+	}
 	public Double LargestDevice(){
 		Double largest = dev[0].GetDisplaySize();
 		for(int i = 1; i<amount; i++) {
@@ -112,6 +128,14 @@ public class PhoneShop {
 		}
 		return count;
 	}
-
+	public Integer HowMany2022Devices(){
+		int count = 0;
+		for(int i = 0; i<amount; i++) {
+			if(dev[i].GetYear()== 2022){
+				count++;
+			}
+		}
+		return count;
+	}
 
 }
