@@ -28,7 +28,7 @@ public class PhoneShop {
 	public Integer CountHowManyIphone8Devices(){
 		int count = 0;
 		for(int i = 0; i<amount; i++) {
-			if(dev[i].GetName()==("Iphone 8")){
+			if(dev[i].GetName()==("IPhone 8")){
 				count++;
 			}
 		}
