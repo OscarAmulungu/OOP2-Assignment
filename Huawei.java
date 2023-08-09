@@ -9,7 +9,7 @@ public class Huawei extends Device {
 	}
 	@Override
 	public Double SellingPrice() {
-		return Price + Price*0.3;
+		return BasicPrice + BasicPrice*0.3;
 	}
 	@Override
 	public Double DiscountPrice(){
