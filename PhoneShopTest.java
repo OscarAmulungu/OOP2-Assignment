@@ -11,9 +11,9 @@ public class PhoneShopTest {
 	@Before
 	public void setUp() {
 		phoneshop = new PhoneShop();
-		phoneshop.AddNewDevice(new IPhone("IPhone 8", 5000.45, "White", "Apple", 2017, 5.5));
-		phoneshop.AddNewDevice(new IPhone("IPhone 12", 13399.45, "Black", "Apple", 2020, 6.2));
-		phoneshop.AddNewDevice(new IPhone("IPhone 11", 10999.78, "Black", "Apple", 2019, 6.1));
+		phoneshop.AddNewDevice(new IPhone("IPhone 8", 5000.45, "White", "IPhone", 2017, 5.5));
+		phoneshop.AddNewDevice(new IPhone("IPhone 12", 13399.45, "Black", "IPhone", 2020, 6.2));
+		phoneshop.AddNewDevice(new IPhone("IPhone 11", 10999.78, "Black", "IPhone", 2019, 6.1));
 		phoneshop.AddNewDevice(new Samsung("Samsung Note10", 9000.42, "Gold", "Samsung", 2011, 6.3));
 		phoneshop.AddNewDevice(new Samsung("Samsung Galaxy Z", 8600.42, "Green", "Samsung", 2022, 6.8));
 		phoneshop.AddNewDevice(new Samsung("Samsung Galaxy S8", 16499.42, "Blue", "Samsung", 2017, 5.9));
@@ -31,7 +31,7 @@ public class PhoneShopTest {
 	@Test
 	public void testCountHowManyAppleDevices() {
 		int expectedValue = 3;
-		int actualValue = phoneshop.CountHowManyAppleDevices();
+		int actualValue = phoneshop.CountHowManyIPhone8Devices();
 		assertEquals((int) expectedValue, actualValue);
 	}
 	@Test
