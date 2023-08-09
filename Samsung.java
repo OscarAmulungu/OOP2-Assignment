@@ -9,7 +9,7 @@ public class Samsung extends Device{
 	}
 	@Override
 	public Double SellingPrice() {
-		return Price + Price*0.4;
+		return BasicPrice + BasicPrice*0.4;
 	}
 	@Override
 	public Double DiscountPrice(){
