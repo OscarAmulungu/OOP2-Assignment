@@ -23,15 +23,21 @@ public class PhoneShopTest {
 	}
 	
 	@Test
-	public void testCountHowManySamsungDevice() {
+	public void testCountHowManySamsungDevices() {
 		int expectedValue = 3;
 		int actualValue = phoneshop.CountHowManySamsungDevices();
 		assertEquals((int) expectedValue, actualValue);
 	}
 	@Test
-	public void testCountHowManyAppleDevice() {
+	public void testCountHowManyAppleDevices() {
 		int expectedValue = 3;
 		int actualValue = phoneshop.CountHowManyAppleDevices();
+		assertEquals((int) expectedValue, actualValue);
+	}
+	@Test
+	public void testCountHowManyHuaweiDevices() {
+		int expectedValue = 2;
+		int actualValue = phoneshop.CountHowManyHuaweiDevices();
 		assertEquals((int) expectedValue, actualValue);
 	}
 	@Test
@@ -54,44 +60,47 @@ public class PhoneShopTest {
 		assertTrue(phoneshop.ContainsSpecificBlackDevices("Black"));
 	}
 	@Test
+	public void testNokiaDevices() {
+		assertFalse(phoneshop.ContainsSpecificNokiaDevices("Nokia"));
+	}
+	@Test
 	public void testHowMany2018Devices() {
 		int expectedValue = 1;
 		int actualValue = phoneshop.HowMany2018Devices();
 		assertEquals((int) expectedValue, actualValue);
 		
 	}
+	@Test
+	public void testHowMany2022Devices() {
+		int expectedValue = 2;
+		int actualValue = phoneshop.HowMany2022Devices();
+		assertEquals((int) expectedValue, actualValue);
+		
+	}
 	
 	@Test
 	public void testNameOfExpensiveDevice() {
-		Device samsungdevice1 = new Samsung("Samsung S10",7000.34,"Blue", "Samsung", 2022,7.1);
-		Device samsungdevice2 = new Samsung("Samsung S8",7800.34,"Blue", "Samsung", 2022,7.1);
-		phoneshop.AddNewDevice(samsungdevice1);
-		phoneshop.AddNewDevice(samsungdevice2);
-		assertEquals(samsungdevice2, phoneshop.NameOfMostExpensiveDevice());
+		String expectedValue = "Samsung Galaxy S8";
+		String actualValue = phoneshop.NameOfMostExpensiveDevice();
+		assertEquals(expectedValue, actualValue);
 	}
 	@Test
 	public void testNameOfCheapestDevice() {
-		Device samsungdevice1 = new Samsung("Samsung S10",7000.34,"Blue", "Samsung", 2022,7.1);
-		Device samsungdevice2 = new Samsung("Samsung S8",7800.34,"Blue", "Samsung", 2022,7.1);
-		phoneshop.AddNewDevice(samsungdevice1);
-		phoneshop.AddNewDevice(samsungdevice2);
-		assertEquals(samsungdevice1, phoneshop.NameOfCheapestDevice());
+		String expectedValue = "Huawei Y5P";
+		String actualValue = phoneshop.NameOfCheapestDevice();
+		assertEquals(expectedValue, actualValue);
 	}
 	@Test
 	public void testLargestDisplaySize() {
-		Device samsungdevice1 = new Samsung("Samsung S10",7000.34,"Blue", "Samsung", 2022,5.8);
-		Device samsungdevice2 = new Samsung("Samsung S8",7800.34,"Blue", "Samsung", 2022,7.1);
-		phoneshop.AddNewDevice(samsungdevice1);
-		phoneshop.AddNewDevice(samsungdevice2);
-		assertEquals(samsungdevice2, phoneshop.LargestDevice());
+		Double expectedValue = 6.8;
+		Double actualValue = phoneshop.LargestDevice();
+		assertEquals(expectedValue, actualValue);
 	}
 	@Test
 	public void testSmallestDisplaySize() {
-		Device samsungdevice1 = new Samsung("Samsung S10",7000.34,"Blue", "Samsung", 2022,7.1);
-		Device samsungdevice2 = new Samsung("Samsung S8",7800.34,"Blue", "Samsung", 2022,5.8);
-		phoneshop.AddNewDevice(samsungdevice1);
-		phoneshop.AddNewDevice(samsungdevice2);
-		assertEquals(samsungdevice2, phoneshop.SmallestDevice());
+		Double expectedValue = 5.5;
+		Double actualValue = phoneshop.SmallestDevice();
+		assertEquals(expectedValue, actualValue);
 	}
 
 }
