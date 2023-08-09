@@ -7,7 +7,7 @@ public class IPhoneTest {
 
 	@Test
 	public void testSellingPrice() {
-		IPhone iphone = new IPhone("IPhone 11", 9000.86, "Black", "Apple",2018, 6.2);
+		IPhone iphone = new IPhone("IPhone 11", 9000.86, "Black", "IPhone",2018, 6.2);
 		// Calculate the expected selling price
         Double expectedSellingPrice = 9000.86 + 9000.86 * 0.5;
 
@@ -17,7 +17,7 @@ public class IPhoneTest {
     @Test
     public void testDiscountPrice() {
         // Create a Samsung object with specific values
-    	IPhone iphone = new IPhone("IPhone 11", 9000.86, "Black", "Apple",2018, 6.2);
+    	IPhone iphone = new IPhone("IPhone 11", 9000.86, "Black", "IPhone",2018, 6.2);
 
         // Calculate the expected discount price
         Double expectedDiscountPrice = (9000.86 + 9000.86 * 0.5) - 800;
