@@ -41,7 +41,6 @@ public class Program {
 				System.out.println("The size of the biggest device sold is : " + TechCompany.LargestDevice());
 				System.out.println("The size of the smallest device sold is: " + TechCompany.SmallestDevice());
 				System.out.println("The number of 2018 devices is: " + TechCompany.HowMany2018Devices());
-				System.out.println("The number of 2022 devices is: " + TechCompany.HowMany2022Devices());
 			    System.out.println("The average price of devices is: " + TechCompany.AveragePrice());
 			    System.out.println("If the Phone company sells white color IPhones: " + TechCompany.ContainsSpecificWhiteDevices(null));
 			    System.out.println("If the Phone company sells black color Devices: " + TechCompany.ContainsSpecificBlackDevices(null));
