@@ -44,22 +44,22 @@ public class PhoneShop {
 		return count;
 	}
 	public String NameOfMostExpensiveDevice(){
-		double expensive = dev[0].GetPrice();
+		double expensive = dev[0].GetBasicPrice();
 		String Name = dev[0].GetName();
 		for(int i = 1; i<amount; i++) {
-			if(dev[i].GetPrice()> expensive) {
-				expensive = dev[i].GetPrice();
+			if(dev[i].GetBasicPrice()> expensive) {
+				expensive = dev[i].GetBasicPrice();
 				Name = dev[i].GetName();
 			}
 		}return Name;
 		
 	}
 	public String NameOfCheapestDevice(){
-		double cheapest = dev[0].GetPrice();
+		double cheapest = dev[0].GetBasicPrice();
 		String Name =dev[0].GetName();
 		for(int i = 1; i<amount; i++) {
-			if(dev[i].GetPrice()< cheapest) {
-				cheapest = dev[i].GetPrice();
+			if(dev[i].GetBasicPrice()< cheapest) {
+				cheapest = dev[i].GetBasicPrice();
 				Name =dev[i].GetName();
 			}
 		}return Name;
@@ -68,14 +68,14 @@ public class PhoneShop {
 	public Double TotalPriceofDevices(){
 		double sum = 0;
 		for(int i = 0; i< amount; i++) {
-			sum = sum + dev[i].GetPrice();
+			sum = sum + dev[i].GetBasicPrice();
 		}return sum;
 	}
 	
 	public Double AveragePrice(){
 		int sum = 0;
 		for(int i =0; i< amount; i++) {
-			sum = (int) (sum + dev[i].GetPrice());
+			sum = (int) (sum + dev[i].GetBasicPrice());
 		}
 		double average = sum/amount;
 		return average;
