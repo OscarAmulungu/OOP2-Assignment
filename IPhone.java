@@ -9,7 +9,7 @@ public class IPhone extends Device {
 	}
 	@Override
 	public Double SellingPrice() {
-		return Price + Price*0.5;
+		return BasicPrice + BasicPrice*0.5;
 	}
 	@Override
 	public Double DiscountPrice(){
