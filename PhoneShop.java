@@ -80,6 +80,19 @@ public class PhoneShop {
 		double average = sum/amount;
 		return average;
 	}
+	public Boolean FindIfHuaweiD3WasSold()
+    {
+        Boolean c = false;
+        for (int i = 0; i<amount; i++)
+        {
+            if (dev[i].GetName() == "Huawei D3")
+            {
+                c = true;
+            }
+        }
+        return c;
+    }
+
 	public Boolean ContainsSpecificWhiteDevices(String string){
 		for(int i =0; i<amount; i++) {
 			if("White".equalsIgnoreCase(dev[i].GetColor())) {
