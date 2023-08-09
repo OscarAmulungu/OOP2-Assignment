@@ -25,10 +25,10 @@ public class PhoneShop {
 		}
 		return count;
 	}
-	public Integer CountHowManyAppleDevices(){
+	public Integer CountHowManyIphone8Devices(){
 		int count = 0;
 		for(int i = 0; i<amount; i++) {
-			if(dev[i].GetBrand()==("Apple")){
+			if(dev[i].GetName()==("Iphone 8")){
 				count++;
 			}
 		}
