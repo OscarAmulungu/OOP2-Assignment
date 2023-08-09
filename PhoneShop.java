@@ -128,14 +128,5 @@ public class PhoneShop {
 		}
 		return count;
 	}
-	public Integer HowMany2022Devices(){
-		int count = 0;
-		for(int i = 0; i<amount; i++) {
-			if(dev[i].GetYear()== 2022){
-				count++;
-			}
-		}
-		return count;
-	}
-
+	
 }
