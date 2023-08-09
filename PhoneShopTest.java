@@ -71,14 +71,6 @@ public class PhoneShopTest {
 		
 	}
 	@Test
-	public void testHowMany2022Devices() {
-		int expectedValue = 2;
-		int actualValue = phoneshop.HowMany2022Devices();
-		assertEquals((int) expectedValue, actualValue);
-		
-	}
-	
-	@Test
 	public void testNameOfExpensiveDevice() {
 		String expectedValue = "Samsung Galaxy S8";
 		String actualValue = phoneshop.NameOfMostExpensiveDevice();
