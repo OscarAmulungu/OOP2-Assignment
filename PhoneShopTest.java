@@ -54,6 +54,10 @@ public class PhoneShopTest {
 	public void testWhiteColorDevices() {
 		assertTrue(phoneshop.ContainsSpecificWhiteDevices("White"));
 	}
+	 @Test
+    public void testHuaweiD3Devices() {
+        assertTrue(phoneshop.FindIfHuaweiD3WasSold("Huawei D3"));
+    }
 	
 	@Test
 	public void testBlackColorDevices() {
