@@ -45,7 +45,7 @@ public class Program {
 			    System.out.println("If the Phone company sells white color IPhones: " + TechCompany.ContainsSpecificWhiteDevices(null));
 			    System.out.println("If the Phone company sells black color Devices: " + TechCompany.ContainsSpecificBlackDevices(null));
 			    System.out.println("If there is any Nokia devices sold: " + TechCompany.ContainsSpecificNokiaDevices(null));
-			    System.out.println("Was there a Huawei D3 sales: " + TechCompany.FindIfHuaweiD3WasSold());
+			    System.out.println("Was there a Huawei D3 sales: " + TechCompany.FindIfHuaweiD3WasSold(null));
 			    
 		
 			}
