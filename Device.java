@@ -9,7 +9,7 @@ public abstract class Device {
 	protected Double DisplaySize;
 	public Device(String nN, Double nP, String nC, String nB, int nY, Double nDS) {
 		this.Name = nN;
-		this.BasicPricePrice = nP;
+		this.BasicPrice = nP;
 		this.Color = nC;
 		this.Brand = nB;
 		this.Year = nY;
