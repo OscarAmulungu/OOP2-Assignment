@@ -80,7 +80,7 @@ public class PhoneShop {
 		double average = sum/amount;
 		return average;
 	}
-	public Boolean FindIfHuaweiD3WasSold()
+	public Boolean FindIfHuaweiD3WasSold(String string)
     {
         Boolean c = false;
         for (int i = 0; i<amount; i++)
