@@ -11,7 +11,7 @@ public class PhoneShopTest {
 	@Before
 	public void setUp() {
 		phoneshop = new PhoneShop();
-		phoneshop.AddNewDevice(new IPhone("IPhone 8", 5000.45, "White", "IPhone", 2017, 5.5));
+		phoneshop.AddNewDevice(new IPhone("IPhone 13", 5000.45, "White", "IPhone", 2017, 5.5));
 		phoneshop.AddNewDevice(new IPhone("IPhone 12", 13399.45, "Black", "IPhone", 2020, 6.2));
 		phoneshop.AddNewDevice(new IPhone("IPhone 11", 10999.78, "Black", "IPhone", 2019, 6.1));
 		phoneshop.AddNewDevice(new Samsung("Samsung Note10", 9000.42, "Gold", "Samsung", 2011, 6.3));
