@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 				PhoneShop TechCompany = new PhoneShop();
-				IPhone I1 = new IPhone("IPhone 8", 5000.45, "White", "IPhone", 2017, 5.5);
+				IPhone I1 = new IPhone("IPhone 13", 5000.45, "White", "IPhone", 2017, 5.5);
 				IPhone I2 = new IPhone("IPhone 12", 13399.45, "Black", "IPhone", 2020, 6.2);
 				IPhone I3 = new IPhone("IPhone 11", 10999.78, "Black", "IPhone", 2019, 6.1);
 				Samsung S1 = new Samsung("Samsung Note10", 9000.42, "Gold", "Samsung", 2011, 6.3);
@@ -34,7 +34,7 @@ public class Main {
 	
 				System.out.println("The total price of all devices: " + TechCompany.TotalPriceofDevices());
 				System.out.println("The number of Samsung devices sold: " + TechCompany.CountHowManySamsungDevices());
-				System.out.println("The number of Iphone 8 devices sold: " + TechCompany.CountHowManyIphone8Devices());
+				System.out.println("The number of Iphone 8 devices sold: " + TechCompany.CountHowManyIphone13Devices());
 				System.out.println("The number of Huawei devices sold: " + TechCompany.CountHowManyHuaweiDevices());
 				System.out.println("The name of the most expensive device sold: " + TechCompany.NameOfMostExpensiveDevice());
 				System.out.println("The name of the cheapest device sold: " + TechCompany.NameOfCheapestDevice());
@@ -44,7 +44,7 @@ public class Main {
 			    System.out.println("The average price of devices is: " + TechCompany.AveragePrice());
 			    System.out.println("If the Phone company sells white color IPhones: " + TechCompany.ContainsSpecificWhiteDevices(null));
 			    System.out.println("If the Phone company sells black color Devices: " + TechCompany.ContainsSpecificBlackDevices(null));
-			    System.out.println("If there is any Nokia devices sold: " + TechCompany.ContainsSpecificNokiaDevices(null));
+			    System.out.println("If there is any Nokia devices sold: " + TechCompany.ContainsSpecificHisenseDevices(null));
 			    System.out.println("Was there a Huawei D3 sales: " + TechCompany.FindIfHuaweiD3WasSold(null));
 			    
 		
