@@ -25,10 +25,10 @@ public class PhoneShop {
 		}
 		return count;
 	}
-	public Integer CountHowManyIphone8Devices(){
+	public Integer CountHowManyIphone13Devices(){
 		int count = 0;
 		for(int i = 0; i<amount; i++) {
-			if(dev[i].GetName()==("IPhone 8")){
+			if(dev[i].GetName()==("IPhone 13")){
 				count++;
 			}
 		}
@@ -107,7 +107,7 @@ public class PhoneShop {
 			}
 		}return false;
 	}
-	public Boolean ContainsSpecificNokiaDevices(String string){
+	public Boolean ContainsSpecificHisenseDevices(String string){
 		for(int i =0; i<amount; i++) {
 			if("Nokia".equalsIgnoreCase(dev[i].GetBrand())) {
 				return true;
