@@ -77,7 +77,7 @@ public class Main {
         System.out.println("If there is any Nokia devices sold: " + TechCompany.ContainsSpecificHisenseDevices(null));
         System.out.println("Was there a Huawei D3 sales: " + TechCompany.FindIfHuaweiD3WasSold(null));
         try {
-            System.out.println("Device name with character ua found: " + TechCompany.DeviceBrandContainUA());
+            System.out.println("Device name with character ua found: " + TechCompany.DeviceNameContainUA());
         } catch (StringIndexOutOfBoundsException e) {
             System.out.println("No device name with ua or UA found");
         } finally {
