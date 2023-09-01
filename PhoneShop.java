@@ -174,7 +174,7 @@ public class PhoneShop {
         return false;
     }
 //String Manipulation
-    public String DeviceBrandContainUA() throws Exception {
+    public String DeviceNameContainUA() throws Exception {
         String nameUA = "";
         try {
             for (int i = 0; i < amount; i++) {
