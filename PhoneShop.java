@@ -173,7 +173,7 @@ public class PhoneShop {
         }
         return false;
     }
-
+//String Manipulation
     public String DeviceBrandContainUA() throws Exception {
         String nameUA = "";
         try {
