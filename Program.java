@@ -77,11 +77,11 @@ public class Main {
         System.out.println("If there is any Nokia devices sold: " + TechCompany.ContainsSpecificHisenseDevices(null));
         System.out.println("Was there a Huawei D3 sales: " + TechCompany.FindIfHuaweiD3WasSold(null));
         try {
-            System.out.println("Device name with ua found: " + TechCompany.DeviceBrandContainUA());
-        } catch (Exception e) {
-            System.out.println("No device name with no or NO found");
+            System.out.println("Device name with character ua found: " + TechCompany.DeviceBrandContainUA());
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("No device name with ua or UA found");
         } finally {
-            System.out.println("Device name");
+            System.out.println("Device found");
         }
         try {
             TechCompany.SaveDeviceInfo(null);
@@ -95,11 +95,7 @@ public class Main {
         } catch (FileNotFoundException e) {
             System.out.println("The file you are trying to open does not exist");
         } finally {
-            System.out.println("File opening");
+            System.out.println("File opened");
         }
     }
 }
-			    
-		
-			}
-	}
