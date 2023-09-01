@@ -33,6 +33,7 @@ public abstract class Device {
     public Double GetDisplaySize(){
         return DisplaySize;
     }
+    //String Manipulation
     public void fixMisspelledCharacters() {
         String correctedName = GetName();
         // Replace misspelled characters as needed
