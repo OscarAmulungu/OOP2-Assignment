@@ -56,7 +56,7 @@ public class Main {
 
         System.out.println("The total price of all devices: " + TechCompany.TotalPriceofDevices());
         System.out.println("The number of Samsung devices sold: " + TechCompany.CountHowManySamsungDevices());
-        System.out.println("The number of Iphone 8 devices sold: " + TechCompany.CountHowManyIphone13Devices());
+        System.out.println("The number of Iphone 13 devices sold: " + TechCompany.CountHowManyIphone13Devices());
         System.out.println("The number of Huawei devices sold: " + TechCompany.CountHowManyHuaweiDevices());
         System.out.println("The name of the most expensive device sold: " + TechCompany.NameOfMostExpensiveDevice());
         System.out.println("The name of the cheapest device sold: " + TechCompany.NameOfCheapestDevice());
