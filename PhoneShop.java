@@ -29,7 +29,7 @@ public class PhoneShop {
     public Integer CountHowManySamsungDevices() {
         int count = 0;
         for (int i = 0; i < amount; i++) {
-            if (dev[i].GetName() == ("Samsung Galaxy")) {
+            if (dev[i].GetName().contains("Samsung")) {
                 count++;
             }
         }
@@ -59,7 +59,7 @@ public class PhoneShop {
     public Integer CountHowManyHuaweiDevices() {
         int count = 0;
         for (int i = 0; i < amount; i++) {
-            if (dev[i].GetName() == ("Huawei D3")) {
+            if (dev[i].GetName().contains("Huawei")) {
                 count++;
             }
         }
