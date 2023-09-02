@@ -29,7 +29,7 @@ public class PhoneShop {
     public Integer CountHowManySamsungDevices() {
         int count = 0;
         for (int i = 0; i < amount; i++) {
-            if (dev[i].GetName() == ("Samsung")) {
+            if (dev[i].GetName() == ("Samsung Galaxy")) {
                 count++;
             }
         }
@@ -59,7 +59,7 @@ public class PhoneShop {
     public Integer CountHowManyHuaweiDevices() {
         int count = 0;
         for (int i = 0; i < amount; i++) {
-            if (dev[i].GetName() == ("Huawei")) {
+            if (dev[i].GetName() == ("Huawei D3")) {
                 count++;
             }
         }
@@ -137,42 +137,20 @@ public class PhoneShop {
         return sum;
     }
 
-    public Boolean FindIfHuaweiD3WasSold(String string) {
-        Boolean c = false;
-        for (int i = 0; i < amount; i++) {
-            if (dev[i].GetName() == "Huawei D3") {
-                c = true;
-            }
-        }
-        return c;
-    }
-
-    public Boolean ContainsSpecificWhiteDevices(String string) {
-        for (int i = 0; i < amount; i++) {
-            if ("White".equalsIgnoreCase(dev[i].GetColor())) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public Boolean ContainsSpecificBlackDevices(String string) {
-        for (int i = 0; i < amount; i++) {
-            if ("Black".equalsIgnoreCase(dev[i].GetColor())) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public Boolean ContainsSpecificHisenseDevices(String string) {
-        for (int i = 0; i < amount; i++) {
-            if ("Nokia".equalsIgnoreCase(dev[i].GetName())) {
-                return true;
-            }
-        }
-        return false;
-    }
+     public Boolean ContainsSpecificWhiteDevices(String color){
+		for(int i =0; i<amount; i++) {
+			if(dev[i].GetColor()== "White") {
+				return true;
+			}
+		}return false;
+	}
+    public Boolean ContainsSpecificHisenseDevice(String name){
+		for(int i =0; i<amount; i++) {
+			if(dev[i].GetName()== "Nokia") {
+				return true;
+			}
+		}return false;
+	}
 //String Manipulation
     public String DeviceNameContainUA() throws Exception {
         String nameUA = "";
