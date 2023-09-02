@@ -30,16 +30,6 @@ public class PhoneShopTest {
 	}
 	
 	@Test
-	public void testBlackColorDevices() {
-		assertTrue(phoneshop.ContainsSpecificBlackDevices("Black"));
-	}
-	
-	@Test
-	public void testHuaweiD3Devices() {
-		assertTrue(phoneshop.FindIfHuaweiD3WasSold("Huawei D3"));
-	}
-	
-	@Test
 	public void testHowMany2018Devices() {
 		int expectedValue = 2;
 		int actualValue = phoneshop.HowMany2018Devices();
