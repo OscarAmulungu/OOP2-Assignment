@@ -9,9 +9,9 @@ public class Main {
         // TODO Auto-generated method stub
         PhoneShop TechCompany = new PhoneShop();
         try {
-            IPhone I1 = new IPhone("iPhne 13", 5000.45, "White", 2017, 5.5);
+            IPhone I1 = new IPhone("iPhne 8", 5000.45, "White", 2017, 5.5);
             IPhone I2 = new IPhone("IPhone 12", 13399.45, "Black", 2020, 6.2);
-            IPhone I3 = new IPhone("IPhone 11", 10999.78, "Black", 2019, 6.1);
+            IPhone I3 = new IPhone("IPhone 13", 10999.78, "Black", 2019, 6.1);
             Samsung S1 = new Samsung("Samsang Note10", 9000.42, "Gold", 2011, 6.3);
             Samsung S2 = new Samsung("Samsung Galaxy Z", 8600.42, "Green", 2022, 6.8);
             Samsung S3 = new Samsung("Samsung Galaxy S23", 16499.42, "Blue", 2017, 5.9);
@@ -73,9 +73,7 @@ public class Main {
         }
 
         System.out.println("If the Phone company sells white color IPhones: " + TechCompany.ContainsSpecificWhiteDevices(null));
-        System.out.println("If the Phone company sells black color Devices: " + TechCompany.ContainsSpecificBlackDevices(null));
         System.out.println("If there is any Nokia devices sold: " + TechCompany.ContainsSpecificHisenseDevices(null));
-        System.out.println("Was there a Huawei D3 sales: " + TechCompany.FindIfHuaweiD3WasSold(null));
         try {
             System.out.println("Device name with character ua found: " + TechCompany.DeviceNameContainUA());
         } catch (StringIndexOutOfBoundsException e) {
